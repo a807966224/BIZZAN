@@ -115,7 +115,7 @@ public class EurekaStateListener {
 	        //发送邮件
 	        javaMailSender.send(mimeMessage);
     	}catch(Exception e) {
-    		e.printStackTrace();
+    		logger.error("发送邮件异常", e);
     	}
     }
 }
